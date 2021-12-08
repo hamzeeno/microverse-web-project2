@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="fontawesome-free-5.15.4-web 2/css/all.min.css" rel="stylesheet">
   </head>
-    <body>
-      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <body>
+  
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="main">
       <header id="header">
-        <img src="" alt="" id="header-image">
+        <div id="header-img-container"><img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original trombones logo"></div>
         <nav id="nav-bar">
+          <figure id="menu">MENU</figure>
           <ul>
             <li><a href="#feature" class="nav-link">Features</a> </li>
             <li><a href="#how-it-works" class="nav-link">How it works</a></li>
@@ -21,48 +23,49 @@
       </header>
       <main>
         <form id="form" action=" https://www.freecodecamp.com/email-submit">
-          <label for="email">Handcrafted, home-made masterpieces</label>
-          <input type="text" placeholder="Enter your email address" id="email" required>
+          <label for="email"><h1>Handcrafted, home-made masterpieces</h1></label>
+          <input type="text" name="email" placeholder="Enter your email address" id="email" required><br>
           <button type="submit">GET STARTED</button>
         </form>
-        <div>
-          <span><i class="fas fa-fire"></i></span>
-          <p>
-            <h3>Premium Materials</h3> 
-            Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
-          </p>
-        </div>
-        <div>
-          <span><i class="fa fa-truck"></i></span>
-          <p>
-            <h3>Fast Shipping</h3> 
-            We make sure you recieve your trombone as soon as we have finished making it. 
-            We also provide free returns if you are not satisfied.
-          </p>
-        </div>
-        <div>
-          <span><i class="fa fa-battery"></i></span>
-          <p>
-            <h3>Quality Assurance</h3> 
-            For every purchase you make, 
-            we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
-          </p>
-        </div>
+        <section id="how-it-works" class="item_container ">
+          <div class="item"> 
+            <span><i class="fa fa-fire" id="fire"></i></span>
+            <div>
+              <h3>Premium Materials</h3>
+              <p>
+                Our trombones use the shiniest brass which is sourced locally. <br> 
+                This will increase the longevity of your purchase.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <span><i class="fa fa-truck" id="truck"></i></span>
+            <div>
+              
+              <h3>
+                Fast Shipping
+              </h3> 
+              <p>
+                We make sure you recieve your trombone as soon as we have finished making it. <br>
+              We also provide free returns if you are not satisfied.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <span><i class="fas fa-battery-full " id="battery"></i></span>
+            <div>
+              <h3>Quality Assurance</h3> 
+              <p>
+                For every purchase you make, <br>
+                we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+              </p>
+            </div>
+          </div>
+        </section>
         <section id="feature">
-          <h2>This is Feature</h2>
-        </section>
-
-        <section id="how-it-works">
-          <h2>How it works</h2>
-        </section>
-
-        <section id="pricing">
-          <h2>Pricing</h2>
-        </section>
-        <section id="video">
           <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
-        <div class="cards-container">
+        <section class="cards-container" id="pricing">
           <div class="card-item">
             <h2>Basse Trombone</h2>
             <h4>800$</h4>
@@ -93,7 +96,7 @@
             </p>
             <button type="button">Select</button>
           </div>
-        </div>
+        </section>
       </main>
       <footer>
         <div>
@@ -114,5 +117,18 @@
     - The freeCodeCamp Team
     -->
     <script  src="js/index.js"></script>
+    <script>
+
+      const myMenu = document.getElementById("menu");
+      myMenu.addEventListener("click", () => {
+        const newList = document.querySelector("ul");
+        newList.classList.toggle("active");
+        newList.style.textAlign = "start";
+        newList.style.marginBottom = "10px";
+      })
+
+
+
+    </script>
   </body>
 </html>
