@@ -2,48 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microverse Challenge</title>
-    <link rel="stylesheet" href="trading.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
-        crossorigin="anonymous">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
-</head>
-<body>
-    <header>
-        <nav class="nav-bar">
-            <div class="menu">
-                <div class="menu-lines"></div>
-                <div class="menu-lines"></div>
-                <div class="menu-lines"></div>
-            </div>
-            <div class="original_trombones"> <i class="fal fa-trumpet"></i><img src="./trumpet.png" alt="trumpet" class="icon"> &nbsp; Original Trombones</a></div>
-            <div><a href="#" class="Features">Features</a></div>
-            <div><a href="#" class="How_it_works">How it work</a></div>
-            <div><a href="#" class="Pricing">Pricing</a></div>
+  </head>
+    <div class="main">
+      <header id="header">
+        <img src="" alt="" id="header-image">
+        <nav id="nav-bar">
+          <ul>
+            <li><a href="#" class="nav-link">Features</a> </li>
+            <li><a href="#" class="nav-link">How it works</a></li>
+            <li><a href="#" class="nav-link"> Pricing</a></li>
+          </ul>
         </nav>
-    </header>
-    <main class="main">
-        <h1>HandCrafed, home-made masterpieces</h1>
-        <div><input type="text" name="email" placeholder="Put your email address"></div>
-        <button class="my_button">GET STARTED</button><br>
-        <div class="premium_material">
-            <i class="fas fa-fire fire_icon icon_item"></i>
-            <!-- <img src="./fireIcon.jpeg" alt="fire-icon" class="fire-icon" > -->
-            <div class="title_item">
-                <h3>Premium material</h3>
-                <p class="p_item">Dignissimos veriatis, facere pariatur a laudantium mollitia ipsa eos alias</p>
-            </div>
+      </header>
+      <main>
+        <form id="form" action=" https://www.freecodecamp.com/email-submit">
+          <label for="email">Handcrafted, home-made masterpieces</label>
+          <input type="text" placeholder="Enter your email address" id="email" required>
+          <button type="submit">GET STARTED</button>
+        </form>
+        <div>
+          <span><i class="fas fa-fire"></i></span>
+          <p>
+            <h3>Premium Materials</h3> 
+            Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+          </p>
         </div>
-    </main>
-    <footer></footer>
-    <script>
+        <div>
+          <span><i class="fa fa-truck"></i></span>
+          <p>
+            <h3>Fast Shipping</h3> 
+            We make sure you recieve your trombone as soon as we have finished making it. 
+            We also provide free returns if you are not satisfied.
+          </p>
+        </div>
+        <div>
+          <span><i class="fa fa-battery"></i></span>
+          <p>
+            <h3>Quality Assurance</h3> 
+            For every purchase you make, 
+            we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+          </p>
+        </div>
+        <section id="video">
+          <video src="https://youtu.be/y8Yv4pnO7qc" id="video"></video>
+        </section>
+        <div class="cards-container">
+          <div class="card-item">
+            <h2>Basse Trombone</h2>
+            <h4>800$</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Obcaecati iste earum necessitatibus magni itaque est aspernatur, 
+              voluptate perferendis sunt commodi iusto, 
+              dolorum qui facere pariatur, accusamus ipsam ex eaque! Pariatur.
+            </p>
+            <button type="button">Select</button>
+          </div>
+          <div class="card-item">
+            <h2>Tenor trombone</h2>
+            <h4>600$</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Obcaecati iste earum necessitatibus magni itaque est aspernatur, 
+              voluptate perferendis sunt commodi iusto, 
+              dolorum qui facere pariatur, accusamus ipsam ex eaque! Pariatur.
+            </p>
+            <button type="button">Select</button>
+          </div>
+          <div class="card-item">
+            <h2>VALVE TROMBONE</h2>
+            <h4>500$</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Obcaecati iste earum necessitatibus magni itaque est aspernatur, 
+              voluptate perferendis sunt commodi iusto, 
+              dolorum qui facere pariatur, accusamus ipsam ex eaque! Pariatur.
+            </p>
+            <button type="button">Select</button>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div>
+          <span>Privacy</span>&nbsp;&nbsp; <span>Terms</span> &nbsp;&nbsp; <span>Contacts</span>
+          <p>
+            Copyright 2016 &copy;, Original Trombones
+          </p>
+        </div>
+      </footer>
+    </div>
 
+    <!--
 
+    Hello Camper!
 
-        
-    </script>
-</body>
+    For now, the test suite only works in Chrome!
+    Please read the README below in the JS Editor before beginning.
+    Feel free to delete this message once you have read it.
+    Good luck and Happy Coding!
+
+    - The freeCodeCamp Team
+
+    -->
+    <script  src="js/index.js"></script>
+  </body>
 </html>
